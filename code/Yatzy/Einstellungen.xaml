@@ -1,0 +1,97 @@
+﻿<Page
+    x:Class="Yatzy.Einstellungen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Yatzy"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    RequestedTheme="Dark"
+    mc:Ignorable="d"
+    Background="Black">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+
+        <!--Hintergrundbild-->
+        <Image Grid.ColumnSpan="5" HorizontalAlignment="Right" Opacity="0.65"
+               Margin="0,0,0,0" Grid.RowSpan="11" VerticalAlignment="Center" 
+               Source="Assets/background.png" Stretch="UniformToFill"/>
+
+        <!--Überschrift-->
+        <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Margin="0,0,0,0">
+            <TextBlock Text="Yatzuu - Einstellungen" Name="textÜberschrift"
+                       Margin="20,12,0,0" Style="{ThemeResource TitleTextBlockStyle}"
+                       FontSize="24" Foreground="White"/>
+            <Rectangle Fill="White" Height="3" Stroke="White" VerticalAlignment="Bottom"
+                       Margin="20,5,20,20" Name="rectÜberschrift"/>
+        </StackPanel>
+
+        <!--Liste-->
+        <StackPanel Grid.Row="1" Margin="0,30,0,0">
+                <StackPanel>
+                    <!--Name-->
+                    <Grid Name="gridName" Width="400">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Name" FontSize="23" Foreground="White" Margin="30,6,0,0" 
+                                   FontFamily="Arial" Grid.Column="0" Name="textName"/>
+                        <TextBox Name="TextBoxName" Text="nemo" FontSize="20" HorizontalAlignment="Center" 
+                             MinWidth="180" VerticalAlignment="Center" BorderBrush="White" Foreground="Gray"
+                             Background="White" Grid.Column="1" Margin="0,0,20,0" GotFocus="TextBoxName_GotFocus"/>
+                    </Grid>
+
+                    <!--Vorschau-->
+                    <Grid Name="gridVorschau" Width="400" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Vorschau" FontSize="23" Margin="30,12,0,0" Name="textVorschau"
+                                   Foreground="White" FontFamily="Arial" Grid.Column="0"/>
+                        <ToggleSwitch Name="ToggleVorschau" HorizontalAlignment="Center" Grid.Column="1" IsOn="True"
+                                  VerticalAlignment="Top" Foreground="White" BorderBrush="White" Margin="0,-10,20,0"/>
+                    </Grid>
+
+                    <!--Würfel-->
+                    <Grid Name="gridWürfel" Width="400" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Würfel" FontSize="23" Margin="30,12,0,0" Name="textWürfel"
+                               Foreground="White" FontFamily="Arial" Grid.Row="3" Grid.Column="0"/>
+                        <ComboBox Name="ComboBoxWürfel" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3"
+                              VerticalAlignment="Center" Width="180" BorderBrush="White" Margin="0,0,20,0"
+                              RequestedTheme="Dark"/>
+                    </Grid>
+
+                    <!--Hintergrund-->
+                    <Grid Name="gridHintergrund" Width="400" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Hintergrund" FontSize="23" Margin="30,12,0,0"
+                               Foreground="White" FontFamily="Arial" Grid.Row="4" Grid.Column="0"
+                               Name="textHintergrund"/>
+                        <ComboBox Name="ComboBoxFarbeBackground" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="4"
+                              VerticalAlignment="Center" Width="180" BorderBrush="White" Margin="0,0,20,0" RequestedTheme="Dark">
+                        </ComboBox>
+                    </Grid>
+
+                </StackPanel>
+        </StackPanel>
+
+        <Button Name="buttonReset" Content="Zurücksetzen" Grid.Column="0" HorizontalAlignment="Left"
+                Grid.Row="8" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Margin="40,0,0,40"
+                Foreground="White" BorderBrush="White" Click="buttonReset_Click"/>
+        <Button Name="buttonOK" Content="OK" Grid.Column="0" HorizontalAlignment="Right" Grid.Row="8"
+                VerticalAlignment="Bottom" Click="ButtonOK_Click" Grid.ColumnSpan="2" Margin="0,0,40,40"
+                Foreground="White" BorderBrush="White"/>
+    </Grid>
+</Page>
