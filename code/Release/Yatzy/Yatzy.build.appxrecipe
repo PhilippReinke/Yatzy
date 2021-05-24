@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-75UR1VE</Machine>
+    <WindowsUser>Alexander 1964</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Release|Win32</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>2c4832b2-5ab0-423b-8968-a0a74c94b645</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\Yatzy.exe">
+      <PackagePath>Yatzy.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\Yatzy.winmd">
+      <PackagePath>Yatzy.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Anfänger_grau.png">
+      <PackagePath>Assets\Anfänger_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Anfänger_weiß.png">
+      <PackagePath>Assets\Anfänger_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\background.png">
+      <PackagePath>Assets\background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\BadgeLogo.scale-240.png">
+      <PackagePath>Assets\BadgeLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Fortgeschrittener_grau.png">
+      <PackagePath>Assets\Fortgeschrittener_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Fortgeschrittener_weiß.png">
+      <PackagePath>Assets\Fortgeschrittener_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Gelegenheitsspieler_grau.png">
+      <PackagePath>Assets\Gelegenheitsspieler_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Gelegenheitsspieler_weiß.png">
+      <PackagePath>Assets\Gelegenheitsspieler_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Kleeblatt_grau.png">
+      <PackagePath>Assets\Kleeblatt_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Kleeblatt_weiß.png">
+      <PackagePath>Assets\Kleeblatt_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\logo - 58.png">
+      <PackagePath>Assets\logo - 58.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Meister_grau.png">
+      <PackagePath>Assets\Meister_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Meister_weiß.png">
+      <PackagePath>Assets\Meister_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Profi_grau.png">
+      <PackagePath>Assets\Profi_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Profi_weiß.png">
+      <PackagePath>Assets\Profi_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Schwein_grau.png">
+      <PackagePath>Assets\Schwein_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Schwein_weiß.png">
+      <PackagePath>Assets\Schwein_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Willkommen_grau.png">
+      <PackagePath>Assets\Willkommen_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Willkommen_weiß.png">
+      <PackagePath>Assets\Willkommen_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_braille_grau.png">
+      <PackagePath>Assets\Würfel - 1_braille_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_braille_weiß.png">
+      <PackagePath>Assets\Würfel - 1_braille_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_japanisch_grau.png">
+      <PackagePath>Assets\Würfel - 1_japanisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_japanisch_weiß.png">
+      <PackagePath>Assets\Würfel - 1_japanisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_klassisch_grau.png">
+      <PackagePath>Assets\Würfel - 1_klassisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_klassisch_weiß.png">
+      <PackagePath>Assets\Würfel - 1_klassisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_modern_grau.png">
+      <PackagePath>Assets\Würfel - 1_modern_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_modern_weiß.png">
+      <PackagePath>Assets\Würfel - 1_modern_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_numerisch_grau.png">
+      <PackagePath>Assets\Würfel - 1_numerisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_numerisch_weiß.png">
+      <PackagePath>Assets\Würfel - 1_numerisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_rund_grau.png">
+      <PackagePath>Assets\Würfel - 1_rund_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_rund_weiß.png">
+      <PackagePath>Assets\Würfel - 1_rund_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_römisch_grau.png">
+      <PackagePath>Assets\Würfel - 1_römisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 1_römisch_weiß.png">
+      <PackagePath>Assets\Würfel - 1_römisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_braille_grau.png">
+      <PackagePath>Assets\Würfel - 2_braille_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_braille_weiß.png">
+      <PackagePath>Assets\Würfel - 2_braille_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_japanisch_grau.png">
+      <PackagePath>Assets\Würfel - 2_japanisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_japanisch_weiß.PNG">
+      <PackagePath>Assets\Würfel - 2_japanisch_weiß.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_klassisch_grau.png">
+      <PackagePath>Assets\Würfel - 2_klassisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_klassisch_weiß.png">
+      <PackagePath>Assets\Würfel - 2_klassisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_modern_grau.png">
+      <PackagePath>Assets\Würfel - 2_modern_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_modern_weiß.png">
+      <PackagePath>Assets\Würfel - 2_modern_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_numerisch_grau.png">
+      <PackagePath>Assets\Würfel - 2_numerisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_numerisch_weiß.png">
+      <PackagePath>Assets\Würfel - 2_numerisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_rund_grau.png">
+      <PackagePath>Assets\Würfel - 2_rund_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_rund_weiß.png">
+      <PackagePath>Assets\Würfel - 2_rund_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_römisch_grau.png">
+      <PackagePath>Assets\Würfel - 2_römisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 2_römisch_weiß.png">
+      <PackagePath>Assets\Würfel - 2_römisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_braille_grau.png">
+      <PackagePath>Assets\Würfel - 3_braille_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_braille_weiß.png">
+      <PackagePath>Assets\Würfel - 3_braille_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_japanisch_grau.png">
+      <PackagePath>Assets\Würfel - 3_japanisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_japanisch_weiß.png">
+      <PackagePath>Assets\Würfel - 3_japanisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_klassisch_grau.png">
+      <PackagePath>Assets\Würfel - 3_klassisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_klassisch_weiß.png">
+      <PackagePath>Assets\Würfel - 3_klassisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_modern_grau.png">
+      <PackagePath>Assets\Würfel - 3_modern_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_modern_weiß.png">
+      <PackagePath>Assets\Würfel - 3_modern_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_numerisch_grau.png">
+      <PackagePath>Assets\Würfel - 3_numerisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_numerisch_weiß.png">
+      <PackagePath>Assets\Würfel - 3_numerisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_rund_grau.png">
+      <PackagePath>Assets\Würfel - 3_rund_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_rund_weiß.png">
+      <PackagePath>Assets\Würfel - 3_rund_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_römisch_grau.png">
+      <PackagePath>Assets\Würfel - 3_römisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 3_römisch_weiß.png">
+      <PackagePath>Assets\Würfel - 3_römisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_braille_grau.png">
+      <PackagePath>Assets\Würfel - 4_braille_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_braille_weiß.png">
+      <PackagePath>Assets\Würfel - 4_braille_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_japanisch_grau.png">
+      <PackagePath>Assets\Würfel - 4_japanisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_japanisch_weiß.png">
+      <PackagePath>Assets\Würfel - 4_japanisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_klassisch_grau.png">
+      <PackagePath>Assets\Würfel - 4_klassisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_klassisch_weiß.png">
+      <PackagePath>Assets\Würfel - 4_klassisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_modern_grau.png">
+      <PackagePath>Assets\Würfel - 4_modern_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_modern_weiß.png">
+      <PackagePath>Assets\Würfel - 4_modern_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_numerisch_grau.png">
+      <PackagePath>Assets\Würfel - 4_numerisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_numerisch_weiß.png">
+      <PackagePath>Assets\Würfel - 4_numerisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_rund_grau.png">
+      <PackagePath>Assets\Würfel - 4_rund_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_rund_weiß.png">
+      <PackagePath>Assets\Würfel - 4_rund_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_römisch_grau.png">
+      <PackagePath>Assets\Würfel - 4_römisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 4_römisch_weiß.png">
+      <PackagePath>Assets\Würfel - 4_römisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_braille_grau.png">
+      <PackagePath>Assets\Würfel - 5_braille_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_braille_weiß.png">
+      <PackagePath>Assets\Würfel - 5_braille_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_japanisch_grau.png">
+      <PackagePath>Assets\Würfel - 5_japanisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_japanisch_weiß.png">
+      <PackagePath>Assets\Würfel - 5_japanisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_klassisch_grau.png">
+      <PackagePath>Assets\Würfel - 5_klassisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_klassisch_weiß.png">
+      <PackagePath>Assets\Würfel - 5_klassisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_modern_grau.png">
+      <PackagePath>Assets\Würfel - 5_modern_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_modern_weiß.png">
+      <PackagePath>Assets\Würfel - 5_modern_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_numerisch_grau.png">
+      <PackagePath>Assets\Würfel - 5_numerisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_numerisch_weiß.png">
+      <PackagePath>Assets\Würfel - 5_numerisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_rund_grau.png">
+      <PackagePath>Assets\Würfel - 5_rund_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_rund_weiß.png">
+      <PackagePath>Assets\Würfel - 5_rund_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_römisch_grau.png">
+      <PackagePath>Assets\Würfel - 5_römisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 5_römisch_weiß.png">
+      <PackagePath>Assets\Würfel - 5_römisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_binär_grau.png">
+      <PackagePath>Assets\Würfel - 6_binär_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_braille_grau.png">
+      <PackagePath>Assets\Würfel - 6_braille_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_braille_weiß.png">
+      <PackagePath>Assets\Würfel - 6_braille_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_japanisch_grau.png">
+      <PackagePath>Assets\Würfel - 6_japanisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_japanisch_weiß.png">
+      <PackagePath>Assets\Würfel - 6_japanisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_klassisch_grau.png">
+      <PackagePath>Assets\Würfel - 6_klassisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_klassisch_weiß.png">
+      <PackagePath>Assets\Würfel - 6_klassisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_modern_grau.png">
+      <PackagePath>Assets\Würfel - 6_modern_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_modern_weiß.png">
+      <PackagePath>Assets\Würfel - 6_modern_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_numerisch_grau.png">
+      <PackagePath>Assets\Würfel - 6_numerisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_numerisch_weiß.png">
+      <PackagePath>Assets\Würfel - 6_numerisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_rund_grau.png">
+      <PackagePath>Assets\Würfel - 6_rund_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_rund_weiß.png">
+      <PackagePath>Assets\Würfel - 6_rund_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_römisch_grau.png">
+      <PackagePath>Assets\Würfel - 6_römisch_grau.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Assets\Würfel - 6_römisch_weiß.png">
+      <PackagePath>Assets\Würfel - 6_römisch_weiß.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\Einstellungen.xbf">
+      <PackagePath>Einstellungen.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\Erfolge.xbf">
+      <PackagePath>Erfolge.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\Hilfe.xbf">
+      <PackagePath>Hilfe.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\Score.xbf">
+      <PackagePath>Score.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Release\Yatzy\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Phone</Name>
+      <Version>12.0.30113.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Phone, MinVersion = 12.0.30113.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.12.00.Phone.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Phone</Name>
+      <Version>12.0.30113.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Phone, MinVersion = 12.0.30113.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.12.00.Phone.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
