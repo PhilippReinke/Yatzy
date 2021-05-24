@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Yatzy", "Yatzy\Yatzy.vcxproj", "{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Debug|ARM.Build.0 = Debug|ARM
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Debug|ARM.Deploy.0 = Debug|ARM
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Debug|Win32.Build.0 = Debug|Win32
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Debug|Win32.Deploy.0 = Debug|Win32
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Release|ARM.ActiveCfg = Release|ARM
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Release|ARM.Build.0 = Release|ARM
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Release|ARM.Deploy.0 = Release|ARM
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Release|Win32.ActiveCfg = Release|Win32
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Release|Win32.Build.0 = Release|Win32
+		{30D8169B-5E7A-4F7F-987C-2E3574F0C0CD}.Release|Win32.Deploy.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
