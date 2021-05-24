@@ -1,5 +1,5 @@
 # Yatzy
-Windows Phone 8.1 (und 10) Implementierung des Spieles Kniffel. Es ist nicht mehr im Store, weil die Urheber es des Namens wegen dem Store haben nehmen lassen.
+Windows Phone 8.1 (und 10) Implementierung des Spieles Kniffel. Es ist nicht mehr im Store, weil die Urheber es des Namens wegen aus dem Store haben nehmen lassen.
 
 <img src="screenshots/1.1.png" alt="drawing" width="300"/>
 
