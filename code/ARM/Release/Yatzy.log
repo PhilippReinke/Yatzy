@@ -1,0 +1,51 @@
+﻿Der Buildvorgang wurde am 09.03.2018 14:42:20 gestartet.
+     1>Projekt "C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Yatzy.vcxproj" auf Knoten "2", _GenerateAppxPackage Ziel(e).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_arm\CL.exe /c /I"C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\\" /I"Generated Files\\" /IARM\Release\ /Zi /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /O2 /Oi /Oy- /GL /D PSAPI_VERSION=2 /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /D _UITHREADCTXT_SUPPORT=0 /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"ARM\Release\Yatzy.pch" /Fo"ARM\Release\\" /Fd"ARM\Release\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.1\\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.1\\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj Hilfe.xaml.cpp
+         Hilfe.xaml.cpp
+       CreateWinMD:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_arm\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.exe" /NOLOGO WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib /NODEFAULTLIB:kernel32.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:ARM ARM\Release\App.xaml.obj
+         ARM\Release\NavigationHelper.obj
+         ARM\Release\RelayCommand.obj
+         ARM\Release\SuspensionManager.obj
+         ARM\Release\Einstellungen.xaml.obj
+         ARM\Release\Erfolge.xaml.obj
+         ARM\Release\Hilfe.xaml.obj
+         ARM\Release\MainPage.xaml.obj
+         ARM\Release\pch.obj
+         ARM\Release\Score.xaml.obj
+         ARM\Release\XamlTypeInfo.Impl.g.obj
+         Code wird generiert.
+         Codegenerierung ist abgeschlossen.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_arm\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.exe" /NOLOGO WindowsPhoneCore.lib RuntimeObject.lib PhoneAppModelHost.lib /NODEFAULTLIB:kernel32.lib /NODEFAULTLIB:ole32.lib /MANIFEST:NO /DEBUG /PDB:"C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:ARM ARM\Release\App.xaml.obj
+         ARM\Release\NavigationHelper.obj
+         ARM\Release\RelayCommand.obj
+         ARM\Release\SuspensionManager.obj
+         ARM\Release\Einstellungen.xaml.obj
+         ARM\Release\Erfolge.xaml.obj
+         ARM\Release\Hilfe.xaml.obj
+         ARM\Release\MainPage.xaml.obj
+         ARM\Release\pch.obj
+         ARM\Release\Score.xaml.obj
+         ARM\Release\XamlTypeInfo.Impl.g.obj
+         ARM\Release\XamlTypeInfo.g.obj
+         Code wird generiert.
+         Codegenerierung ist abgeschlossen.
+         Yatzy.vcxproj -> C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.exe
+       _GenerateProjectPriFileCore:
+         C:\Program Files (x86)\Windows Kits\8.1\\bin\x86\MakePri.exe New -ProjectRoot "C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\\" -ConfigXml ARM\Release\priconfig.xml -OutputFile "C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\resources.pri" -ExtensionDll "C:\Program Files (x86)\Windows Phone Kits\8.1\\bin\x86\MrmEnvironmentExtDl.dll" -IndexName 11264PhilippReinke.Yatzuu -Verbose -Overwrite  
+       _GenerateAppxPackageFile:
+         C:\Program Files (x86)\Windows Kits\8.1\\bin\x86\MakeAppx.exe pack /l /h sha256 /f ARM\Release\package.map.txt /o /p "C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\AppPackages\Yatzy\Yatzy_1.1.0.5_ARM_Test\Yatzy_1.1.0.5_ARM.appx"  
+         Yatzy -> C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\AppPackages\Yatzy\Yatzy_1.1.0.5_ARM_Test\Yatzy_1.1.0.5_ARM.appx
+       _GenerateAppxSymbolPackage:
+         C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\AppxPackage\PDBCopy.exe "C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\ARM\Release\Yatzy\Yatzy.pdb" ARM\Release\Stripped\Yatzy.pdb -p 
+         Yatzy -> C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\AppPackages\Yatzy\Yatzy_1.1.0.5_ARM_Test\Yatzy_1.1.0.5_ARM.appxsym
+       _CreateAppStoreContainer:
+         Yatzy -> C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\AppPackages\Yatzy\Yatzy_1.1.0.5_ARM.appxupload
+         Ihr Paket wurde erfolgreich erstellt.
+     1>Die Erstellung des Projekts "C:\Users\Alexander 1964\Desktop\Philipp\Projekt_Yatzy - deutsch\Yatzy\Yatzy\Yatzy.vcxproj" ist abgeschlossen, _GenerateAppxPackage Ziel(e).
+
+Build erfolgreich.
+
+Verstrichene Zeit 00:00:41.07

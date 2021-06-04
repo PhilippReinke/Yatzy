@@ -1,0 +1,215 @@
+﻿<Page
+    x:Class="Yatzy.Erfolge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Yatzy"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Dark"
+     Background="Black">
+
+    <Page.Resources>
+        <Image x:Name="ImageWillkommenWeiß" Stretch="Fill" Source="Assets/Willkommen_weiß.png"/>
+        <Image x:Name="ImageSiegerWeiß" Stretch="Fill" Source="Assets/Schwein_weiß.png"/>
+        <Image x:Name="ImagePerfektWeiß" Stretch="Fill" Source="Assets/Kleeblatt_weiß.png"/>
+        <Image x:Name="ImageAnfängerWeiß" Stretch="Fill" Source="Assets/Anfänger_weiß.png"/>
+        <Image x:Name="ImageGelegenWeiß" Stretch="Fill" Source="Assets/Gelegenheitsspieler_weiß.png"/>
+        <Image x:Name="ImageFortgWeiß" Stretch="Fill" Source="Assets/Fortgeschrittener_weiß.png"/>
+        <Image x:Name="ImageProfiWeiß" Stretch="Fill" Source="Assets/Profi_weiß.png"/>
+        <Image x:Name="ImageMeisterWeiß" Stretch="Fill" Source="Assets/Meister_weiß.png"/>
+    </Page.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+
+        <!--Hintergrundbild-->
+        <Image Grid.ColumnSpan="5" HorizontalAlignment="Right" Opacity="0.65"
+               Margin="0,0,0,0" Grid.RowSpan="11" VerticalAlignment="Center" 
+               Source="Assets/background.png" Stretch="UniformToFill"/>
+
+        <!--Überschrift-->
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Yatzuu - Erfolge" Name="textÜberschrift" 
+                       Margin="20,12,0,0" Style="{ThemeResource TitleTextBlockStyle}"
+                       FontSize="24" Foreground="White"/>
+            <Rectangle Fill="White" Height="3" Stroke="White" Name="rectÜberschrift" 
+                       VerticalAlignment="Bottom" Margin="20,5,20,20"/>
+        </StackPanel>
+
+        <!--Liste-->
+        <ListView Grid.Row="1" Margin="20,0,20,0">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="1"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <!--Willkommen-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridWill">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderWill">
+                        <Image Name="imageWill" Source="Assets/Willkommen_grau.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Willkommen" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Will"/>
+                        <TextBlock Text="Beenden Sie ein Spiel." FontSize="16" Name="text2Will"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+
+            <!--Sieger der Herzen-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridSieger">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderSieger">
+                        <Image Name="imageSieger" Source="Assets/Schwein_grau.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Sieger der Herzen" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Sieger"/>
+                        <TextBlock Text="Erreichen Sie die geringste Punktzahl." FontSize="16" Name="text2Sieger"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+        
+            <!--perfektes Spiel-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridPerf">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderPerf">
+                        <Image Name="imagePerf" Source="Assets/Kleeblatt_grau.png" Stretch="UniformToFill" Height="40" Width="40"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Perfektes Spiel" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Perf"/>
+                        <TextBlock Text="Erreichen Sie 375 Punkte." FontSize="16" Name="text2Perf"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+          
+            <!--Anfänger-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridAnf">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderAnf">
+                        <Image Name="imageAnf" Source="Assets/Anfänger_grau.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Anfänger" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Anf"/>
+                        <TextBlock Text="Erreichen Sie mehr als 199 Punkte." FontSize="16" Name="text2Anf"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+           
+            <!--Gelegenheitsspieler-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridGeleg">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderGeleg">
+                        <Image Name="imageGeleg" Source="Assets/Gelegenheitsspieler_grau.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Gelegenheitsspieler" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Geleg"/>
+                        <TextBlock Text="Erreichen Sie mehr als 249 Punkte." FontSize="16" Name="text2Geleg"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+            
+            <!--Fortgeschrittener-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridFortg">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderFortg">
+                        <Image Name="imageFortg" Source="Assets/Fortgeschrittener_grau.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Fortgeschrittener" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Fortg"/>
+                        <TextBlock Text="Erreichen Sie mehr als 299 Punkte." FontSize="16" Name="text2Fortg"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+            
+            <!--Profi-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridProfi">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderProfi">
+                        <Image Name="imageProfi" Source="Assets/Profi_grau.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Profi" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Profi"/>
+                        <TextBlock Text="Erreichen Sie mehr als 319 Punkte." FontSize="16" Name="text2Profi"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+            
+            <!--Meister-->
+            <ListViewItem IsHitTestVisible="False">
+                <Grid Margin="6" Width="350" Name="gridMeister">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border Background="Transparent"
+                        Width="60" Height="60" Name="borderMeister">
+                        <Image Name="imageMeister" Source="Assets/Meister_grau.png" Stretch="UniformToFill" Height="50" Width="50"/>
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
+                        <TextBlock Text="Meister" Foreground="#66FFFFFF"
+                               FontSize="20" TextWrapping="NoWrap" Name="text1Meister"/>
+                        <TextBlock Text="Erreichen Sie mehr als 349 Punkte." FontSize="16" Name="text2Meister"
+                               TextWrapping="NoWrap" Margin="3,0,0,0" Foreground="#66FFFFFF"/>
+                    </StackPanel>
+                </Grid>
+            </ListViewItem>
+
+        </ListView>
+
+    </Grid>
+</Page>
+

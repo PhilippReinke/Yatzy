@@ -1,0 +1,543 @@
+﻿<Page
+    x:Class="Yatzy.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Yatzy"
+    RequestedTheme="Dark"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    RenderTransformOrigin="0.5,0.5"
+    Background = "Black">
+
+    <!--Ressourcen-->
+    <Page.Resources>
+        <!--klassisch / weiß-->
+        <ImageBrush x:Name="BrushKlassischWeiß1" Stretch="Fill" ImageSource="Assets/Würfel - 1_klassisch_weiß.png"/>
+        <ImageBrush x:Name="BrushKlassischWeiß2" Stretch="Fill" ImageSource="Assets/Würfel - 2_klassisch_weiß.png"/>
+        <ImageBrush x:Name="BrushKlassischWeiß3" Stretch="Fill" ImageSource="Assets/Würfel - 3_klassisch_weiß.png"/>
+        <ImageBrush x:Name="BrushKlassischWeiß4" Stretch="Fill" ImageSource="Assets/Würfel - 4_klassisch_weiß.png"/>
+        <ImageBrush x:Name="BrushKlassischWeiß5" Stretch="Fill" ImageSource="Assets/Würfel - 5_klassisch_weiß.png"/>
+        <ImageBrush x:Name="BrushKlassischWeiß6" Stretch="Fill" ImageSource="Assets/Würfel - 6_klassisch_weiß.png"/>
+        <!--klassisch / grau-->
+        <ImageBrush x:Name="BrushKlassischGrau1" Stretch="Fill" ImageSource="Assets/Würfel - 1_klassisch_grau.png"/>
+        <ImageBrush x:Name="BrushKlassischGrau2" Stretch="Fill" ImageSource="Assets/Würfel - 2_klassisch_grau.png"/>
+        <ImageBrush x:Name="BrushKlassischGrau3" Stretch="Fill" ImageSource="Assets/Würfel - 3_klassisch_grau.png"/>
+        <ImageBrush x:Name="BrushKlassischGrau4" Stretch="Fill" ImageSource="Assets/Würfel - 4_klassisch_grau.png"/>
+        <ImageBrush x:Name="BrushKlassischGrau5" Stretch="Fill" ImageSource="Assets/Würfel - 5_klassisch_grau.png"/>
+        <ImageBrush x:Name="BrushKlassischGrau6" Stretch="Fill" ImageSource="Assets/Würfel - 6_klassisch_grau.png"/>
+        <!--modern / weiß-->
+        <ImageBrush x:Name="BrushModernWeiß1" Stretch="Fill" ImageSource="Assets/Würfel - 1_modern_weiß.png"/>
+        <ImageBrush x:Name="BrushModernWeiß2" Stretch="Fill" ImageSource="Assets/Würfel - 2_modern_weiß.png"/>
+        <ImageBrush x:Name="BrushModernWeiß3" Stretch="Fill" ImageSource="Assets/Würfel - 3_modern_weiß.png"/>
+        <ImageBrush x:Name="BrushModernWeiß4" Stretch="Fill" ImageSource="Assets/Würfel - 4_modern_weiß.png"/>
+        <ImageBrush x:Name="BrushModernWeiß5" Stretch="Fill" ImageSource="Assets/Würfel - 5_modern_weiß.png"/>
+        <ImageBrush x:Name="BrushModernWeiß6" Stretch="Fill" ImageSource="Assets/Würfel - 6_modern_weiß.png"/>
+        <!--modern / grau-->
+        <ImageBrush x:Name="BrushModernGrau1" Stretch="Fill" ImageSource="Assets/Würfel - 1_modern_grau.png"/>
+        <ImageBrush x:Name="BrushModernGrau2" Stretch="Fill" ImageSource="Assets/Würfel - 2_modern_grau.png"/>
+        <ImageBrush x:Name="BrushModernGrau3" Stretch="Fill" ImageSource="Assets/Würfel - 3_modern_grau.png"/>
+        <ImageBrush x:Name="BrushModernGrau4" Stretch="Fill" ImageSource="Assets/Würfel - 4_modern_grau.png"/>
+        <ImageBrush x:Name="BrushModernGrau5" Stretch="Fill" ImageSource="Assets/Würfel - 5_modern_grau.png"/>
+        <ImageBrush x:Name="BrushModernGrau6" Stretch="Fill" ImageSource="Assets/Würfel - 6_modern_grau.png"/>
+        <!--rund / weiß-->
+        <ImageBrush x:Name="BrushRundWeiß1" Stretch="Fill" ImageSource="Assets/Würfel - 1_rund_weiß.png"/>
+        <ImageBrush x:Name="BrushRundWeiß2" Stretch="Fill" ImageSource="Assets/Würfel - 2_rund_weiß.png"/>
+        <ImageBrush x:Name="BrushRundWeiß3" Stretch="Fill" ImageSource="Assets/Würfel - 3_rund_weiß.png"/>
+        <ImageBrush x:Name="BrushRundWeiß4" Stretch="Fill" ImageSource="Assets/Würfel - 4_rund_weiß.png"/>
+        <ImageBrush x:Name="BrushRundWeiß5" Stretch="Fill" ImageSource="Assets/Würfel - 5_rund_weiß.png"/>
+        <ImageBrush x:Name="BrushRundWeiß6" Stretch="Fill" ImageSource="Assets/Würfel - 6_rund_weiß.png"/>
+        <!--rund / grau-->
+        <ImageBrush x:Name="BrushRundGrau1" Stretch="Fill" ImageSource="Assets/Würfel - 1_rund_grau.png"/>
+        <ImageBrush x:Name="BrushRundGrau2" Stretch="Fill" ImageSource="Assets/Würfel - 2_rund_grau.png"/>
+        <ImageBrush x:Name="BrushRundGrau3" Stretch="Fill" ImageSource="Assets/Würfel - 3_rund_grau.png"/>
+        <ImageBrush x:Name="BrushRundGrau4" Stretch="Fill" ImageSource="Assets/Würfel - 4_rund_grau.png"/>
+        <ImageBrush x:Name="BrushRundGrau5" Stretch="Fill" ImageSource="Assets/Würfel - 5_rund_grau.png"/>
+        <ImageBrush x:Name="BrushRundGrau6" Stretch="Fill" ImageSource="Assets/Würfel - 6_rund_grau.png"/>
+        <!--numerisch / weiß-->
+        <ImageBrush x:Name="BrushNumerischWeiß1" Stretch="Fill" ImageSource="Assets/Würfel - 1_numerisch_weiß.png"/>
+        <ImageBrush x:Name="BrushNumerischWeiß2" Stretch="Fill" ImageSource="Assets/Würfel - 2_numerisch_weiß.png"/>
+        <ImageBrush x:Name="BrushNumerischWeiß3" Stretch="Fill" ImageSource="Assets/Würfel - 3_numerisch_weiß.png"/>
+        <ImageBrush x:Name="BrushNumerischWeiß4" Stretch="Fill" ImageSource="Assets/Würfel - 4_numerisch_weiß.png"/>
+        <ImageBrush x:Name="BrushNumerischWeiß5" Stretch="Fill" ImageSource="Assets/Würfel - 5_numerisch_weiß.png"/>
+        <ImageBrush x:Name="BrushNumerischWeiß6" Stretch="Fill" ImageSource="Assets/Würfel - 6_numerisch_weiß.png"/>
+        <!--numerisch / grau-->
+        <ImageBrush x:Name="BrushNumerischGrau1" Stretch="Fill" ImageSource="Assets/Würfel - 1_numerisch_grau.png"/>
+        <ImageBrush x:Name="BrushNumerischGrau2" Stretch="Fill" ImageSource="Assets/Würfel - 2_numerisch_grau.png"/>
+        <ImageBrush x:Name="BrushNumerischGrau3" Stretch="Fill" ImageSource="Assets/Würfel - 3_numerisch_grau.png"/>
+        <ImageBrush x:Name="BrushNumerischGrau4" Stretch="Fill" ImageSource="Assets/Würfel - 4_numerisch_grau.png"/>
+        <ImageBrush x:Name="BrushNumerischGrau5" Stretch="Fill" ImageSource="Assets/Würfel - 5_numerisch_grau.png"/>
+        <ImageBrush x:Name="BrushNumerischGrau6" Stretch="Fill" ImageSource="Assets/Würfel - 6_numerisch_grau.png"/>
+        <!--Brailleschrift / weiß-->
+        <ImageBrush x:Name="BrushBrailleWeiß1" Stretch="Fill" ImageSource="Assets/Würfel - 1_braille_weiß.png"/>
+        <ImageBrush x:Name="BrushBrailleWeiß2" Stretch="Fill" ImageSource="Assets/Würfel - 2_braille_weiß.png"/>
+        <ImageBrush x:Name="BrushBrailleWeiß3" Stretch="Fill" ImageSource="Assets/Würfel - 3_braille_weiß.png"/>
+        <ImageBrush x:Name="BrushBrailleWeiß4" Stretch="Fill" ImageSource="Assets/Würfel - 4_braille_weiß.png"/>
+        <ImageBrush x:Name="BrushBrailleWeiß5" Stretch="Fill" ImageSource="Assets/Würfel - 5_braille_weiß.png"/>
+        <ImageBrush x:Name="BrushBrailleWeiß6" Stretch="Fill" ImageSource="Assets/Würfel - 6_braille_weiß.png"/>
+        <!--Brailleschrift / grau-->
+        <ImageBrush x:Name="BrushBrailleGrau1" Stretch="Fill" ImageSource="Assets/Würfel - 1_braille_grau.png"/>
+        <ImageBrush x:Name="BrushBrailleGrau2" Stretch="Fill" ImageSource="Assets/Würfel - 2_braille_grau.png"/>
+        <ImageBrush x:Name="BrushBrailleGrau3" Stretch="Fill" ImageSource="Assets/Würfel - 3_braille_grau.png"/>
+        <ImageBrush x:Name="BrushBrailleGrau4" Stretch="Fill" ImageSource="Assets/Würfel - 4_braille_grau.png"/>
+        <ImageBrush x:Name="BrushBrailleGrau5" Stretch="Fill" ImageSource="Assets/Würfel - 5_braille_grau.png"/>
+        <ImageBrush x:Name="BrushBrailleGrau6" Stretch="Fill" ImageSource="Assets/Würfel - 6_braille_grau.png"/>
+        <!--japanisch / weiß-->
+        <ImageBrush x:Name="BrushJapanischWeiß1" Stretch="Fill" ImageSource="Assets/Würfel - 1_japanisch_weiß.png"/>
+        <ImageBrush x:Name="BrushJapanischWeiß2" Stretch="Fill" ImageSource="Assets/Würfel - 2_japanisch_weiß.png"/>
+        <ImageBrush x:Name="BrushJapanischWeiß3" Stretch="Fill" ImageSource="Assets/Würfel - 3_japanisch_weiß.png"/>
+        <ImageBrush x:Name="BrushJapanischWeiß4" Stretch="Fill" ImageSource="Assets/Würfel - 4_japanisch_weiß.png"/>
+        <ImageBrush x:Name="BrushJapanischWeiß5" Stretch="Fill" ImageSource="Assets/Würfel - 5_japanisch_weiß.png"/>
+        <ImageBrush x:Name="BrushJapanischWeiß6" Stretch="Fill" ImageSource="Assets/Würfel - 6_japanisch_weiß.png"/>
+        <!--japanisch / grau-->
+        <ImageBrush x:Name="BrushJapanischGrau1" Stretch="Fill" ImageSource="Assets/Würfel - 1_japanisch_grau.png"/>
+        <ImageBrush x:Name="BrushJapanischGrau2" Stretch="Fill" ImageSource="Assets/Würfel - 2_japanisch_grau.png"/>
+        <ImageBrush x:Name="BrushJapanischGrau3" Stretch="Fill" ImageSource="Assets/Würfel - 3_japanisch_grau.png"/>
+        <ImageBrush x:Name="BrushJapanischGrau4" Stretch="Fill" ImageSource="Assets/Würfel - 4_japanisch_grau.png"/>
+        <ImageBrush x:Name="BrushJapanischGrau5" Stretch="Fill" ImageSource="Assets/Würfel - 5_japanisch_grau.png"/>
+        <ImageBrush x:Name="BrushJapanischGrau6" Stretch="Fill" ImageSource="Assets/Würfel - 6_japanisch_grau.png"/>
+        <!--römisch / weiß-->
+        <ImageBrush x:Name="BrushRömischWeiß1" Stretch="Fill" ImageSource="Assets/Würfel - 1_römisch_weiß.png"/>
+        <ImageBrush x:Name="BrushRömischWeiß2" Stretch="Fill" ImageSource="Assets/Würfel - 2_römisch_weiß.png"/>
+        <ImageBrush x:Name="BrushRömischWeiß3" Stretch="Fill" ImageSource="Assets/Würfel - 3_römisch_weiß.png"/>
+        <ImageBrush x:Name="BrushRömischWeiß4" Stretch="Fill" ImageSource="Assets/Würfel - 4_römisch_weiß.png"/>
+        <ImageBrush x:Name="BrushRömischWeiß5" Stretch="Fill" ImageSource="Assets/Würfel - 5_römisch_weiß.png"/>
+        <ImageBrush x:Name="BrushRömischWeiß6" Stretch="Fill" ImageSource="Assets/Würfel - 6_römisch_weiß.png"/>
+        <!--römisch / grau-->
+        <ImageBrush x:Name="BrushRömischGrau1" Stretch="Fill" ImageSource="Assets/Würfel - 1_römisch_grau.png"/>
+        <ImageBrush x:Name="BrushRömischGrau2" Stretch="Fill" ImageSource="Assets/Würfel - 2_römisch_grau.png"/>
+        <ImageBrush x:Name="BrushRömischGrau3" Stretch="Fill" ImageSource="Assets/Würfel - 3_römisch_grau.png"/>
+        <ImageBrush x:Name="BrushRömischGrau4" Stretch="Fill" ImageSource="Assets/Würfel - 4_römisch_grau.png"/>
+        <ImageBrush x:Name="BrushRömischGrau5" Stretch="Fill" ImageSource="Assets/Würfel - 5_römisch_grau.png"/>
+        <ImageBrush x:Name="BrushRömischGrau6" Stretch="Fill" ImageSource="Assets/Würfel - 6_römisch_grau.png"/>
+        <!--Syle aller ToggleButtons-->
+        <Thickness x:Key="PhoneBorderThickness">2.5</Thickness>
+        <FontFamily x:Key="PhoneFontFamilyNormal">Segoe WP</FontFamily>
+        <FontWeight x:Key="PhoneButtonFontWeight">Semibold</FontWeight>
+        <x:Double x:Key="TextStyleLargeFontSize">18.14</x:Double>
+        <Thickness x:Key="PhoneButtonContentPadding">9.5,0,9.5,3.5</Thickness>
+        <x:Double x:Key="PhoneButtonMinHeight">57.5</x:Double>
+        <x:Double x:Key="PhoneButtonMinWidth">109</x:Double>
+        <Thickness x:Key="PhoneTouchTargetOverhang">0,9.5</Thickness>
+        <Style TargetType="ToggleButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource PhoneForegroundBrush}"/>
+            <Setter Property="Foreground" Value="{ThemeResource PhoneForegroundBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource PhoneBorderThickness}"/>
+            <Setter Property="FontFamily" Value="{ThemeResource PhoneFontFamilyNormal}"/>
+            <Setter Property="FontWeight" Value="{ThemeResource PhoneButtonFontWeight}"/>
+            <Setter Property="FontSize" Value="{ThemeResource TextStyleLargeFontSize}"/>
+            <Setter Property="Padding" Value="{ThemeResource PhoneButtonContentPadding}"/>
+            <Setter Property="MinHeight" Value="{ThemeResource PhoneButtonMinHeight}"/>
+            <Setter Property="MinWidth" Value="{ThemeResource PhoneButtonMinWidth}"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Grid Background="Transparent">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="PointerOver"/>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="EnabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="DisabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Checked">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="EnabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneAccentBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="EnabledContent">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneButtonBasePressedForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="DisabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="DisabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="DisabledContent">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneBackgroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="CheckedPointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="EnabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneAccentBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="EnabledContent">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneButtonBasePressedForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="DisabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="BorderBrush" Storyboard.TargetName="DisabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="DisabledContent">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneBackgroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="CheckedPressed"/>
+                                    <VisualState x:Name="CheckedDisabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Background" Storyboard.TargetName="EnabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneAccentBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity" Storyboard.TargetName="EnabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="0.4"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Foreground" Storyboard.TargetName="EnabledContent">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource PhoneButtonBasePressedForegroundBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Indeterminate"/>
+                                    <VisualState x:Name="IndeterminatePointerOver"/>
+                                    <VisualState x:Name="IndeterminatePressed"/>
+                                    <VisualState x:Name="IndeterminateDisabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="EnabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Collapsed"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="DisabledBackground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="Visible"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border x:Name="EnabledBackground" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Margin="{ThemeResource PhoneTouchTargetOverhang}">
+                                <ContentPresenter x:Name="EnabledContent" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                            <Border x:Name="DisabledBackground" BorderBrush="Transparent" BorderThickness="{TemplateBinding BorderThickness}" Background="Transparent" IsHitTestVisible="False" Margin="{ThemeResource PhoneTouchTargetOverhang}" Visibility="Collapsed">
+                                <ContentPresenter x:Name="DisabledContent" AutomationProperties.AccessibilityView="Raw" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" Foreground="{ThemeResource ButtonDisabledForegroundThemeBrush}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <!--AppBar-->
+    <Page.BottomAppBar>
+        <CommandBar Background="#26FFFFFF" Foreground="White">
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:ConnectionId='1' Label="Neues Spiel"                                   />
+            </CommandBar.SecondaryCommands>
+            <AppBarButton x:ConnectionId='2' Label="Erfolge"                                   Icon="Library"/>
+            <AppBarButton x:ConnectionId='3' Label="Einstellung" Icon="Setting"                                        />
+            <AppBarButton x:ConnectionId='4' Label="Punkte" Icon="FourBars"                                 />
+            <AppBarButton x:ConnectionId='5' Label="Hilfe" Icon="Help"                                />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <!--Einteilung in Spalten und Zeilen-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1.3*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!--Hintergrundbild-->
+        <Image Grid.ColumnSpan="5" HorizontalAlignment="Right" Opacity="0.65"
+               Margin="0,0,0,0" Grid.RowSpan="11" VerticalAlignment="Center" 
+               Source="Assets/background.png" Stretch="UniformToFill"/>
+
+        <!--Würfel-->
+        <ToggleButton x:ConnectionId='6' x:Name="dice1"
+            BorderBrush="White"
+			Width="60" Height="80"
+			MinWidth="0" MinHeight="0"
+			HorizontalAlignment="Center"
+            Grid.Column="0"                   >
+            <ToggleButton.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Würfel - 1_klassisch_weiß.png"/>
+            </ToggleButton.Background>
+        </ToggleButton>
+
+        <ToggleButton x:ConnectionId='7' x:Name="dice2"
+            BorderBrush="White"
+			Width="60" Height="80"
+			MinWidth="0" MinHeight="0"
+			HorizontalAlignment="Center"
+			Grid.Column="1"                   >
+            <ToggleButton.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Würfel - 2_klassisch_weiß.png"/>
+            </ToggleButton.Background>
+        </ToggleButton>
+
+        <ToggleButton x:ConnectionId='8' x:Name="dice3" 
+            BorderBrush="White"
+			Width="60" Height="80"
+			MinWidth="0" MinHeight="0"
+			HorizontalAlignment="Center"
+			Grid.Column="2"                   >
+            <ToggleButton.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Würfel - 3_klassisch_weiß.png"/>
+            </ToggleButton.Background>
+        </ToggleButton>
+
+        <ToggleButton x:ConnectionId='9' x:Name="dice4" 
+			BorderBrush="White" Width="60" Height="80"
+			MinWidth="0" MinHeight="0"
+			HorizontalAlignment="Center"
+			Grid.Column="3" IsChecked="False"                   >
+            <ToggleButton.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Würfel - 4_klassisch_weiß.png"/>
+            </ToggleButton.Background>
+        </ToggleButton>
+
+        <ToggleButton x:ConnectionId='10' x:Name="dice5"
+			BorderBrush="White" Width="60" Height="80"
+			MinWidth="0" MinHeight="0"
+			HorizontalAlignment="Center"
+			Grid.Column="4"                   >
+            <ToggleButton.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/Würfel - 5_klassisch_weiß.png"/>
+            </ToggleButton.Background>
+        </ToggleButton>
+
+        <!--ControlButton-->
+        <Button x:ConnectionId='11' x:Name="controlButton"
+			Content="Los" Foreground="White" BorderBrush="White"
+			HorizontalAlignment="Right" VerticalAlignment="Center"
+			Grid.ColumnSpan="2" Grid.Column="3" Margin="0,0,10,0"
+            Grid.Row="1"                             Height="55"/>
+
+        <!--Text1-->
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktEinerText"
+				Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center"
+				Text="Einer" FontSize="23" Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktZweierText"
+				Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center"
+				Text="Zweier" FontSize="23" Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktDreierText"
+				Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center"
+				Text="Dreier" FontSize="23" Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktViererText"
+				Grid.Row="5" TextWrapping="Wrap"
+				Text="Vierer" FontSize="23" VerticalAlignment="Center"
+                Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktFünferText"
+				Grid.Row="6" TextWrapping="Wrap"
+				Text="Fünfer" FontSize="23" VerticalAlignment="Center"
+                Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktSechserText"
+				Grid.Row="7" TextWrapping="Wrap"
+				Text="Sechser" FontSize="23" VerticalAlignment="Center"
+                Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktBonusText"
+				Grid.Row="8" TextWrapping="Wrap"
+				Text="Bonus" FontSize="23" VerticalAlignment="Center"
+                Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pktSummeText"
+				Grid.Row="9" TextWrapping="Wrap"
+				Text="Summe" FontSize="23" VerticalAlignment="Center"
+                Grid.ColumnSpan="2"  Margin="20,0,0,0"/>
+
+        <!--Text2-->
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Name="pkt3PaschText"
+				Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" 
+                TextWrapping="Wrap" Text="3er-Pasch" FontSize="23"
+                VerticalAlignment="Center" Margin="40,0,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" Name="pkt4PaschText"
+				TextWrapping="Wrap" Foreground="White" Margin="40,0,0,0"
+                Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"
+				Text="4er-Pasch" FontSize="23" VerticalAlignment="Center"/>
+
+        <TextBlock HorizontalAlignment="Left" Name="pktKlStraßeText"
+				TextWrapping="Wrap" Foreground="White" Margin="40,0,0,0"
+                Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"
+				Text="kl Straße" FontSize="23" VerticalAlignment="Center"/>
+
+        <TextBlock HorizontalAlignment="Left" Name="pktGrStraßeText"
+				TextWrapping="Wrap" Foreground="White" Margin="40,0,0,0"
+                Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"
+				Text="gr Straße" FontSize="23" VerticalAlignment="Center"/>
+
+        <TextBlock HorizontalAlignment="Left" Name="pktFullHouseText"
+				TextWrapping="Wrap" Foreground="White" Margin="40,0,0,0"
+                Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"
+				Text="Full house" FontSize="23" VerticalAlignment="Center"/>
+
+        <TextBlock HorizontalAlignment="Left" Name="pktChanceText"
+				TextWrapping="Wrap" Foreground="White" Margin="40,0,0,0"
+                Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2"
+				Text="Chance" FontSize="23" VerticalAlignment="Center"/>
+
+        <TextBlock HorizontalAlignment="Left" Name="ptkYatzyText"
+				TextWrapping="Wrap" Foreground="White" Margin="40,0,0,0"
+                Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2"
+				Text="5 Gleiche" FontSize="23" VerticalAlignment="Center"/>
+
+        <TextBlock HorizontalAlignment="Left" Foreground="White" Margin="40,0,0,0"
+				TextWrapping="Wrap" Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2"
+				Text="Gesamt" FontSize="23" VerticalAlignment="Center" Name="pktGesamtText"/>
+
+        <!--Punkte - 1.Spalte-->
+        <ToggleButton x:ConnectionId='12' x:Name="pktEiner" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='13' x:Name="pktZweier" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='14' x:Name="pktDreier" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='15' x:Name="pktVierer" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='16' x:Name="pktFünfer" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='17' x:Name="pktSechser" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <TextBlock x:Name="pktBonus" Text=""
+                      HorizontalAlignment="Right" Foreground="White"
+                      Width="65" MinWidth="0" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"
+                      FontSize="20" TextAlignment="Center"/>
+
+        <TextBlock x:Name="pktSumme" Text="" TextWrapping="Wrap"
+                      HorizontalAlignment="Right" Foreground="White"                      
+                      Width="65" MinWidth="0" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,-20,0"
+                      Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2"
+                      FontSize="20" TextAlignment="Center"/>
+
+        <!--Punkte - 2.Spalte-->
+        <ToggleButton x:ConnectionId='18' x:Name="pkt3Pasch" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="1"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='19' x:Name="pkt4Pasch" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="1"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='20' x:Name="pktKlStraße" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="1"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='21' x:Name="pktGrStraße" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="1"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='22' x:Name="pktFullHouse" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="1"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='23' x:Name="pktChance" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="1"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <ToggleButton x:ConnectionId='24' x:Name="pktYatzy" Content=""
+                      HorizontalAlignment="Right" Foreground="LightCoral"
+                      Width="65" MinWidth="0" Height="50" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="1"
+                      BorderBrush="Transparent" FontSize="20"
+                      IsChecked="False"                   FontWeight="Normal"/>
+
+        <TextBlock x:Name="pktGesamt" Text=""
+                      HorizontalAlignment="Right" Foreground="White"
+                      Width="65" MinWidth="0" MinHeight="0"
+                      VerticalAlignment="Center" Margin="0,0,10,0"
+                      Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="1"
+                      FontSize="20" TextAlignment="Center"/>
+    </Grid>
+</Page>
+
