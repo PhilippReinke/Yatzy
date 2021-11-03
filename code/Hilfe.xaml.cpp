@@ -170,7 +170,7 @@ void Hilfe::OnNavigatedTo(NavigationEventArgs^ e)
 	textÜberschrift = "Über Yatzuu";
 	textAnleitung = "Die Ihnen vorliegende Adaption des Spieles Yatzy ist von Philipp Reinke geplant und entwickelt worden. ";
 	textAnleitung += "Sollten Sie Fragen, Anmerkungen oder Verbesserungsvorschläge haben, senden Sie diese bitte an ";
-	textAnleitung += "die E-Mail-Adresse reinke.philipp@web.de. Ich bemühe mich um eine schnellstmögliche Bearbeitung Ihrer Anfrage ";
+	textAnleitung += "die E-Mail-Adresse .... Ich bemühe mich um eine schnellstmögliche Bearbeitung Ihrer Anfrage ";
 	textAnleitung += "und wünsche Ihnen viel Vergnügen beim Würfeln.";
 	// Text skalieren
 	textBlockInfo1->FontSize = static_cast<int>(dScaleFactor * 20);
